@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  mentor_id: 1
+  mentee_id: 1
+  start: 2013-11-09 17:34:25
+  end: 2013-11-09 17:34:25
+  language_id: 1
+  tool_id: 1
+
+two:
+  mentor_id: 1
+  mentee_id: 1
+  start: 2013-11-09 17:34:25
+  end: 2013-11-09 17:34:25
+  language_id: 1
+  tool_id: 1

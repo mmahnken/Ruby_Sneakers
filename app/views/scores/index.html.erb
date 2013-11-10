@@ -1,0 +1,37 @@
+<h1>Listing scores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mentor</th>
+      <th>Mentee</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Language</th>
+      <th>Tool</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @scores.each do |score| %>
+      <tr>
+        <td><%= score.mentor_id %></td>
+        <td><%= score.mentee_id %></td>
+        <td><%= score.start %></td>
+        <td><%= score.end %></td>
+        <td><%= score.language_id %></td>
+        <td><%= score.tool_id %></td>
+        <td><%= link_to 'Show', score %></td>
+        <td><%= link_to 'Edit', edit_score_path(score) %></td>
+        <td><%= link_to 'Destroy', score, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Score', new_score_path %>

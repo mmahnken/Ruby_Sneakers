@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mentor:</strong>
+  <%= @score.mentor_id %>
+</p>
+
+<p>
+  <strong>Mentee:</strong>
+  <%= @score.mentee_id %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @score.start %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @score.end %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @score.language_id %>
+</p>
+
+<p>
+  <strong>Tool:</strong>
+  <%= @score.tool_id %>
+</p>
+
+<%= link_to 'Edit', edit_score_path(@score) %> |
+<%= link_to 'Back', scores_path %>
