@@ -1,8 +1,9 @@
 RubySneakers::Application.routes.draw do
   get "user/profile"
-  get "scores/home"
   get "scores/results"
-  
+
+  root 'scores#index'
+
   resources :scores
 
   # The priority is based upon order of creation: first created -> highest priority.
